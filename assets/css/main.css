@@ -29,6 +29,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.center-align {
+	display: flex;
+	justify-content: center;
+}
+
 body {
 	line-height: 1;
 }
