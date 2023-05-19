@@ -29,10 +29,46 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+/* My additions */
+
 .center-align {
 	display: flex;
 	justify-content: center;
 }
+
+.icon-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon.solid.major.style1 {
+	width: 15vw;
+	/* Default size for larger screens */
+	height: 15vw;
+	/* Default size for larger screens */
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.icon.solid.major.style1 img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+	.icon.solid.major.style1 {
+		width: 25vw;
+		/* Adjust the size for smaller screens */
+		height: 25vw;
+		/* Adjust the size for smaller screens */
+	}
+}
+
+/* END OF MY ADDITIONS */
 
 body {
 	line-height: 1;
